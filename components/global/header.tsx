@@ -10,6 +10,7 @@ export function Header() {
           alt="GA Finanse Logo"
           width={105}
           height={35}
+          loading="eager"
         />
       </Link>
 

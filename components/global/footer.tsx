@@ -3,8 +3,9 @@ import { ContactInfo } from "../base/contact-info";
 
 export function Footer() {
   const t = useTranslations("Global.Footer");
+
   return (
-    <footer className="bg-primary-navy absolute bottom-0 left-0 w-full py-10 text-white">
+    <footer className="bg-primary-navy w-full py-10 text-white">
       <div className="container flex justify-between gap-10 flex-col-reverse md:flex-row">
         <div className="max-w-120">
           <div className="uppercase font-medium mb-2">{t("Col1.Title")}</div>

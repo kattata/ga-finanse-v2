@@ -14,8 +14,8 @@ body {
   background: linear-gradient(
     to right,
     var(--background-2) 0%,
-    var(--background-2) 30%,
-    var(--background-1) 30%,
+    var(--background-2) 20%,
+    var(--background-1) 20%,
     var(--background-1) 100%
   );
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;

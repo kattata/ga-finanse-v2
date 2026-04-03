@@ -1,9 +1,10 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Logo } from "../logo";
+import { useNavigation } from "@/hooks/use-navigation";
 
 export function DesktopHeader() {
-  const t = useTranslations("Global.Header.Navigation");
+  const navigation = useNavigation();
 
   return (
     <header className="flex items-center justify-between gap-3 uppercase w-full container mx-auto py-5">
@@ -12,10 +13,13 @@ export function DesktopHeader() {
       </Link>
 
       <nav className="flex gap-12 font-medium">
-        <Link href={"/"}>{t("Home")}</Link>
-        <Link href={"/"}>{t("Services")}</Link>
-        <Link href={"/"}>{t("About")}</Link>
-        <Link href={"/"}>{t("Contact")}</Link>
+        {navigation.map((item) => {
+          return (
+            <Link key={item.url} href={item.url}>
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );

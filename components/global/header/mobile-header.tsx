@@ -1,15 +1,14 @@
 "use client";
 import { Menu } from "@deemlol/next-icons";
 
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "../logo";
+import { useNavigation } from "@/hooks/use-navigation";
 
 export function MobileHeader() {
+  const navigation = useNavigation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const t = useTranslations("Global.Header.Navigation");
 
   return (
     <>
@@ -38,10 +37,13 @@ export function MobileHeader() {
         </Link>
 
         <nav className="flex flex-col gap-4 font-medium mt-10 uppercase">
-          <Link href={"/"}>{t("Home")}</Link>
-          <Link href={"/"}>{t("Services")}</Link>
-          <Link href={"/"}>{t("About")}</Link>
-          <Link href={"/"}>{t("Contact")}</Link>
+          {navigation.map((item) => {
+            return (
+              <Link key={item.url} href={item.url}>
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </>

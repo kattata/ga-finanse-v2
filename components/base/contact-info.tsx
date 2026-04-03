@@ -1,20 +1,27 @@
 type Props = {
-  size?: "small";
+  className?: string;
+  showDividers?: boolean;
 };
 
-export function ContactInfo({ size = "small" }: Props) {
+export function ContactInfo({ className, showDividers }: Props) {
   return (
-    <div
-      className={`text-white flex flex-col gap-2 ${size === "small" ? "text-sm" : ""}`}
-    >
-      <div>
-        <div>ul. Świętojańska 59 lok. nr 4</div>
-        <div>81-391 Gdynia</div>
-      </div>
-
-      <div>
+    <div className={`flex flex-col ${className}`}>
+      <div
+        className={
+          showDividers ? "border-b border-b-gray-200 pb-4 mb-4" : "pb-4"
+        }
+      >
         <div>+48 669 998 340</div>
         <div>ga.finanse@wp.pl</div>
+      </div>
+
+      <div
+        className={
+          showDividers ? "border-b border-b-gray-200 pb-4 mb-4" : "pb-4"
+        }
+      >
+        <div>ul. Świętojańska 59 lok. nr 4</div>
+        <div>81-391 Gdynia</div>
       </div>
 
       <div>

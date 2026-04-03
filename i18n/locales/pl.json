@@ -1,0 +1,12 @@
+{
+  "Global": {
+    "Header": {
+      "Navigation": {
+        "Home": "Strona główna",
+        "Services": "Usługi",
+        "About": "O firmie",
+        "Contact": "Kontakt"
+      }
+    }
+  }
+}

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function Header() {
+  const t = useTranslations("Global.Header.Navigation");
+
   return (
     <header className="flex items-center justify-between gap-3 uppercase w-full container mx-auto py-5">
       <Link href={"/"}>
@@ -15,10 +18,10 @@ export function Header() {
       </Link>
 
       <nav className="flex gap-12 font-medium">
-        <Link href={"/"}>Strona główna</Link>
-        <Link href={"/"}>Usługi</Link>
-        <Link href={"/"}>O firmie</Link>
-        <Link href={"/"}>Kontakt</Link>
+        <Link href={"/"}>{t("Home")}</Link>
+        <Link href={"/"}>{t("Services")}</Link>
+        <Link href={"/"}>{t("About")}</Link>
+        <Link href={"/"}>{t("Contact")}</Link>
       </nav>
     </header>
   );

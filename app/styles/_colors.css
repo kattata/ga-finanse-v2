@@ -1,0 +1,5 @@
+@theme inline {
+  /* --color-*: initial; Removes all default TW colors. */
+
+  --color-primary: #dbb442;
+}

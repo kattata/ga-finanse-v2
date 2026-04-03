@@ -1,0 +1,60 @@
+@theme inline {
+  --font-sans: var(--font-roboto-sans);
+
+  --text-h1: var(--text-h1);
+  --leading-h1: var(--leading-h1);
+
+  --text-h2: var(--text-h2);
+  --leading-h2: var(--leading-h2);
+
+  --text-h3: var(--text-h3);
+  --leading-h3: var(--leading-h3);
+
+  --text-h4: var(--text-h4);
+  --leading-h4: var(--leading-h4);
+
+  --text-lg: var(--text-p-large);
+  --text-base: var(--text-p-default);
+  --text-sm: var(--text-p-small);
+  --text-xs: var(--text-p-extra-small);
+}
+
+:root {
+  --text-h1: 32px;
+  --leading-h1: 40px;
+
+  --text-h2: 24px;
+  --leading-h2: 32px;
+
+  --text-h3: 20px;
+  --leading-h3: 28px;
+
+  --text-h4: 16px;
+  --leading-h4: 24px;
+}
+
+@layer base {
+  h1 {
+    font-weight: 600;
+    font-size: var(--text-h1);
+    line-height: var(--leading-h1);
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: var(--text-h4);
+    line-height: var(--leading-h4);
+  }
+}

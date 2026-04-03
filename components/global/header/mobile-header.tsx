@@ -1,4 +1,5 @@
 "use client";
+import { Menu } from "@deemlol/next-icons";
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -17,8 +18,11 @@ export function MobileHeader() {
           <Logo />
         </Link>
 
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <div className="burger"></div>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-primary-yellow relative z-30"
+        >
+          <Menu color="currentColor" />
         </button>
       </header>
 

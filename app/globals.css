@@ -39,6 +39,7 @@ body {
 .container {
   max-width: var(--max-width-container);
   padding-inline: var(--container-padding);
+  margin: auto;
 }
 
 button {

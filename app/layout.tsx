@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/global/header/header";
 import { NextIntlClientProvider } from "next-intl";
+import { Footer } from "@/components/global/footer";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Footer />
       </body>
     </html>
   );

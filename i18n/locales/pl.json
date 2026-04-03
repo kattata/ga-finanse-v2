@@ -7,6 +7,15 @@
         "About": "O firmie",
         "Contact": "Kontakt"
       }
+    },
+    "Footer": {
+      "Col1": {
+        "Title": "GA Finanse",
+        "Text": "GA Finanse Spółka z ograniczoną odpowiedzialnością z siedzibą w Gdyni (81-391), ul. Świętojańska 59 lok. 4, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego pod numerem KRS 0000663924, prowadzonego przez Sąd Rejonowy Gdańsk-Północ w Gdańsku, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego, kapitał zakładowy 6000 zł w całości opłacony."
+      },
+      "Col2": {
+        "Title": "Kontakt"
+      }
     }
   }
 }

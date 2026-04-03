@@ -12,11 +12,6 @@
 
   --text-h4: var(--text-h4);
   --leading-h4: var(--leading-h4);
-
-  --text-lg: var(--text-p-large);
-  --text-base: var(--text-p-default);
-  --text-sm: var(--text-p-small);
-  --text-xs: var(--text-p-extra-small);
 }
 
 :root {

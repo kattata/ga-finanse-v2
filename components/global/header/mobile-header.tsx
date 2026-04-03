@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Logo } from "../logo";
 
 export function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,13 +14,7 @@ export function MobileHeader() {
     <>
       <header className="flex items-center justify-between gap-3 uppercase w-full container mx-auto py-5">
         <Link href={"/"}>
-          <Image
-            src="/icons/ga-finanse.png"
-            alt="GA Finanse Logo"
-            width={105}
-            height={35}
-            loading="eager"
-          />
+          <Logo />
         </Link>
 
         <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -36,13 +30,7 @@ export function MobileHeader() {
         }
       >
         <Link href={"/"}>
-          <Image
-            src="/icons/ga-finanse.png"
-            alt="GA Finanse Logo"
-            width={105}
-            height={35}
-            loading="eager"
-          />
+          <Logo />
         </Link>
 
         <nav className="flex flex-col gap-4 font-medium mt-10 uppercase">

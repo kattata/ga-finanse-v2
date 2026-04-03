@@ -14,7 +14,7 @@ export function Footer() {
 
         <div>
           <div className="uppercase font-medium mb-2">{t("Col2.Title")}</div>
-          <ContactInfo size="small" />
+          <ContactInfo className="text-sm text-white" />
         </div>
       </div>
     </footer>

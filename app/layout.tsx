@@ -11,9 +11,9 @@ const robotoSans = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "GA Finanse",
+  title: "GA Finanse | Doradztwo finansowe i dotacje dla firm",
   description:
-    "GA Finanse wspomaga przedsiębiorców w pozyskiwaniu i rozliczaniu dotacji unjinych, oferuje również doradztwo biznesowe i finansowe. Dysponuje wieloletnim doświadczeniem i licznymi sukcesami w dziedzinie środków unijnych i nie tylko.",
+    "Pomagamy firmom i klientom indywidualnym w pozyskiwaniu dotacji, kredytów i finansowania inwestycji. Doradztwo finansowe GA Finanse – Gdynia.",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${robotoSans.variable} h-full antialiased`}>
+    <html lang="pl" className={`${robotoSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Header />
         <div className="pt-6 pb-10">

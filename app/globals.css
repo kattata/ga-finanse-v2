@@ -40,3 +40,35 @@ body {
   max-width: var(--max-width-container);
   padding-inline: var(--container-padding);
 }
+
+.burger {
+  position: relative;
+  background-color: var(--color-primary-yellow);
+  height: 3px;
+  width: 23px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    background-color: var(--color-primary-yellow);
+    height: 3px;
+    width: 23px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    background-color: var(--color-primary-yellow);
+    height: 3px;
+    width: 23px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}

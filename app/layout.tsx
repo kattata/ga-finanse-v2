@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/global/header";
+import { Header } from "@/components/global/header/header";
 import { NextIntlClientProvider } from "next-intl";
 
 const robotoSans = Roboto({

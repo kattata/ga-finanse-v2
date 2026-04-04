@@ -1,7 +1,7 @@
 export function MapEmbed() {
   return (
     <iframe
-      width="1168"
+      width="100%"
       height="450"
       style={{ border: 0 }}
       loading="lazy"

@@ -19,7 +19,7 @@ export default function Contact(): JSX.Element {
           />
         </div>
 
-        <div className="bg-white rounded-sm shadow-md max-w-112.5 p-9 -mt-20 relative z-10 md:absolute md:mt-0 left-0 md:top-1/2 md:-translate-y-1/2">
+        <div className="tile max-w-112.5 -mt-20 relative z-10 md:absolute md:mt-0 left-0 md:top-1/2 md:-translate-y-1/2">
           <h1 className="text-2xl mb-2">{t("Title")}</h1>
           <p className="mb-9">{t("Description")}</p>
           <ContactInfo showDividers className="text-black" />

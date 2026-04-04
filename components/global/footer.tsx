@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { ContactInfo } from "../base/contact-info";
+import Link from "next/link";
 
 export function Footer() {
   const t = useTranslations("Global.Footer");
@@ -10,6 +11,12 @@ export function Footer() {
         <div className="max-w-120">
           <div className="uppercase font-medium mb-2">{t("Col1.Title")}</div>
           <div className="text-sm">{t("Col1.Text")}</div>
+
+          <div className="mt-3">
+            <Link href={"/polityka-prywatnosci"} className="text-sm underline">
+              {t("PrivacyPolicy")}
+            </Link>
+          </div>
         </div>
 
         <div>

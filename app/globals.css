@@ -24,8 +24,8 @@ body {
     background: linear-gradient(
       to right,
       var(--background-2) 0%,
-      var(--background-2) 40%,
-      var(--background-1) 40%,
+      var(--background-2) 35%,
+      var(--background-1) 35%,
       var(--background-1) 100%
     );
   }
@@ -40,6 +40,19 @@ body {
   max-width: var(--max-width-container);
   padding-inline: var(--container-padding);
   margin: auto;
+}
+
+.tile {
+  background: var(--color-white);
+  padding: 36px;
+  border-radius: 4px;
+
+  --tw-shadow:
+    0 4px 6px -1px var(--tw-shadow-color, #0000001a),
+    0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
 button {

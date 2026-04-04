@@ -15,7 +15,8 @@
       },
       "Col2": {
         "Title": "Kontakt"
-      }
+      },
+      "PrivacyPolicy": "Polityka prywatności"
     }
   },
   "Hero": {
@@ -27,7 +28,27 @@
     "Title": "Doradztwo finansowe i dotacje dla firm – Gdynia i okolice"
   },
   "About": {
-    "Title": "O firmie"
+    "Title": "O firmie GA Finanse",
+    "Section1": {
+      "Headline": "Doradztwo finansowe i dotacje unijne",
+      "Text1": "GA Finanse specjalizuje się w kompleksowym doradztwie finansowym i gospodarczym. Pomagamy przedsiębiorcom oraz klientom indywidualnym w pozyskiwaniu finansowania, w tym kredytów, leasingu oraz dotacji unijnych.",
+      "Text2": "Posiadamy wieloletnie doświadczenie w skutecznym zdobywaniu środków z funduszy europejskich. Nasze sukcesy potwierdzają wysoką skuteczność oraz duża wartość pozyskanych dofinansowań."
+    },
+    "Section2": {
+      "Headline": "Zakres usług",
+      "SubSection1": {
+        "Headline": "Finansowanie dla firm i klientów indywidualnych",
+        "Text": "Pomagamy w uzyskaniu finansowania w formie kredytów, leasingu, faktoringu oraz innych rozwiązań bankowych i pozabankowych."
+      },
+      "SubSection2": {
+        "Headline": "Dotacje unijne i projekty",
+        "Text": "Specjalizujemy się w projektach współfinansowanych ze środków unijnych. Obsługujemy zarówno małe firmy, jak i duże projekty realizowane we współpracy z jednostkami naukowymi i instytutami badawczymi."
+      },
+      "SubSection3": {
+        "Headline": "Kompleksowe wsparcie",
+        "Text": "Współpracujemy z klientami w Gdyni oraz na terenie całej Polski. Zapewniamy pełne wsparcie – od przygotowania wniosku, przez pozyskanie finansowania, aż po rozliczenie projektu."
+      }
+    }
   },
   "Contact": {
     "Title": "Kontakt",

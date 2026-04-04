@@ -1,5 +1,4 @@
 import { ContactInfo } from "@/components/base/contact-info";
-import { MapEmbed } from "@/components/base/map-embed";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { JSX } from "react";
@@ -25,10 +24,6 @@ export default function Contact(): JSX.Element {
           <p className="mb-9">{t("Description")}</p>
           <ContactInfo showDividers className="text-black" />
         </div>
-      </div>
-
-      <div className="mt-10">
-        <MapEmbed />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div className="container">
       <div className="relative">
-        <div className="h-200 w-screen -ml-4 overflow-hidden md:h-[calc(100vh-150px)] md:w-full md:m-0">
+        <div className="w-screen -ml-4 overflow-hidden md:h-[calc(100vh-150px)] md:w-full md:m-0">
           <Image
             src="/images/gdynia-sea-towers-min.jpg"
             alt="Gdynia Sea Towers"

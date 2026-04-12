@@ -103,6 +103,10 @@ export default function Home() {
               </p>
             </ImageAndText>
           </section>
+
+          <section>
+            <h2>Zaufali nam</h2>
+          </section>
         </div>
       </main>
     </div>

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "../base/button";
+import Link from "next/link";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -25,7 +26,9 @@ export function Hero() {
           </h1>
           <div className="text-lg mb-5">{t("Subtitle")}</div>
 
-          <Button>{t("CTA")}</Button>
+          <Link href={"/kontakt"}>
+            <Button>{t("CTA")}</Button>
+          </Link>
         </div>
       </div>
     </div>

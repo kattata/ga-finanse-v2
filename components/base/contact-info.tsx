@@ -10,7 +10,7 @@ export function ContactInfo({ className, showDividers }: Props) {
     <div className={`flex flex-col ${className} [&_a]:underline`}>
       <div
         className={
-          showDividers ? "border-b border-b-gray-200 pb-4 mb-4" : "pb-4"
+          showDividers ? "border-b border-b-gray-300 pb-4 mb-4" : "pb-4"
         }
       >
         <div>
@@ -23,7 +23,7 @@ export function ContactInfo({ className, showDividers }: Props) {
 
       <div
         className={
-          showDividers ? "border-b border-b-gray-200 pb-4 mb-4" : "pb-4"
+          showDividers ? "border-b border-b-gray-300 pb-4 mb-4" : "pb-4"
         }
       >
         <div>ul. Świętojańska 59 lok. nr 4</div>

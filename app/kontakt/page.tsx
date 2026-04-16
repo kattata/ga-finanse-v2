@@ -16,6 +16,7 @@ export default function Contact(): JSX.Element {
             width={1200}
             height={800}
             className="object-cover w-full h-full"
+            loading="eager"
           />
         </div>
 

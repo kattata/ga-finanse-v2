@@ -6,6 +6,7 @@ type ImageAndTextProps = {
     url: string;
     alt: string;
   };
+  loading?: "eager" | "lazy";
   imagePosition: "left" | "right";
 };
 
@@ -13,6 +14,7 @@ export function ImageAndText({
   children,
   image,
   imagePosition,
+  loading,
 }: ImageAndTextProps) {
   return (
     <section className="relative">
@@ -24,6 +26,7 @@ export function ImageAndText({
           alt={image.alt}
           width={1200}
           height={600}
+          loading={loading}
           className="w-full h-full object-cover"
         />
       </div>

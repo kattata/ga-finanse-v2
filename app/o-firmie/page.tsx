@@ -16,6 +16,7 @@ export default function About(): JSX.Element {
             alt: "Gdynia Seatowers",
           }}
           imagePosition="left"
+          loading="eager"
         >
           <>
             <h2 className="mb-2">{t("Section1.Headline")}</h2>
@@ -33,6 +34,7 @@ export default function About(): JSX.Element {
           alt: "Gdynia Seatowers",
         }}
         imagePosition="right"
+        loading="eager"
       >
         <>
           <h2 className="mb-2">{t("Section2.Headline")}</h2>

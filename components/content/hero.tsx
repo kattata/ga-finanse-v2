@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "../base/button";
+import Link from "next/link";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -8,7 +9,7 @@ export function Hero() {
   return (
     <div className="container">
       <div className="relative">
-        <div className="w-screen -ml-4 overflow-hidden md:h-[calc(100vh-150px)] md:w-full md:m-0">
+        <div className="w-screen -ml-4 overflow-hidden md:h-[calc(100vh-300px)] md:w-full md:m-0">
           <Image
             src="/images/gdynia-sea-towers-min.jpg"
             alt="Gdynia Sea Towers"
@@ -25,7 +26,9 @@ export function Hero() {
           </h1>
           <div className="text-lg mb-5">{t("Subtitle")}</div>
 
-          <Button>{t("CTA")}</Button>
+          <Link href={"/kontakt"}>
+            <Button>{t("CTA")}</Button>
+          </Link>
         </div>
       </div>
     </div>

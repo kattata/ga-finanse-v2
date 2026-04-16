@@ -1,6 +1,15 @@
 @theme inline {
-  /* --color-*: initial; Removes all default TW colors. */
+  --color-*: initial; /* Removes all default TW colors. */
 
   --color-primary-yellow: #dbb442;
   --color-primary-navy: #233376;
+
+  --color-gray-100: #eeeeee;
+  --color-gray-300: #b9b9b9;
+  --color-gray-500: #878787;
+  --color-gray-700: #595959;
+  --color-gray-900: #2e2e2e;
+
+  --color-white: #ffffff;
+  --color-black: var(--color-gray-900);
 }

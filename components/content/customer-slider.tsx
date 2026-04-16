@@ -18,22 +18,17 @@ export function CustomerSlider() {
       autoplay={{ delay: 1000 }}
       modules={[Scrollbar, A11y]}
       scrollbar={{ draggable: true }}
-      //   breakpoints={{
-      //     768: {
-      //       slidesPerView: 5.5,
-      //     },
-      //   }}
     >
       {customers.map((customer) => {
         return (
           <SwiperSlide key={customer.name} className="my-3 mb-6 w-fit">
-            <div className="tile w-[200px] h-[200px] flex justify-center items-center w-fit">
+            <div className="tile w-[200px] h-[200px] flex justify-center items-center">
               <Image
                 className="object-contain"
                 src={customer.image.url}
                 alt={customer.name}
-                width={150}
-                height={150}
+                width={110}
+                height={110}
               />
             </div>
           </SwiperSlide>

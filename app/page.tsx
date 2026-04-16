@@ -1,6 +1,5 @@
 import { Hero } from "@/components/content/hero";
 import { IconTile } from "@/components/base/icon-tile";
-import Link from "next/link";
 import { ArrowLink } from "@/components/base/arrow-link";
 import { ImageAndText } from "@/components/base/image-and-text";
 import { CustomerSlider } from "@/components/content/customer-slider";
@@ -21,11 +20,17 @@ export default function Home() {
                 }}
               >
                 <div>
-                  <h2>Doradztwo biznesowe i finansowanie zwrotne</h2>
-                  <p>
-                    Analizy finansowe, biznesplany, wnioski kredytowe,
-                    finansowanie aktywów obrotowych i zadań inwestycyjnych
+                  <h2>Doradztwo biznesowe i finansowe</h2>
+                  <p className="mb-3">
+                    Pomagamy dobrać najlepsze rozwiązania finansowe — zarówno
+                    dla firm, jak i osób prywatnych.
                   </p>
+
+                  <ul>
+                    <li>analizy finansowe i doradztwo</li>
+                    <li>przygotowanie dokumentacji i wniosków</li>
+                    <li>wsparcie w podejmowaniu decyzji finansowych</li>
+                  </ul>
                 </div>
               </IconTile>
 
@@ -36,25 +41,18 @@ export default function Home() {
                 }}
               >
                 <div>
-                  <h2>Dotacje UE</h2>
+                  <h2>Finansowanie i kredyty</h2>
+
+                  <p className="mb-3">
+                    Pomagamy w uzyskaniu finansowania dopasowanego do Twojej
+                    sytuacji — niezależnie od tego, czy prowadzisz firmę, czy
+                    działasz prywatnie.
+                  </p>
+
                   <ul>
-                    <li>
-                      <strong>
-                        Pozyskiwanie bezzwrotnego wsparcia finansowego
-                      </strong>
-                    </li>
-                    <li className="mb-1">
-                      Projekty inwestycyjne, badawczo-rozwojowe, targowe i inne
-                    </li>
-                    <li>
-                      <strong>
-                        Skuteczne rozliczanie pozyskanych środków pomocowych
-                      </strong>
-                    </li>
-                    <li>
-                      Wnioski o płatność, procedury wyboru dostawców, wzory
-                      dokumentów, etc.
-                    </li>
+                    <li>kredyty dla firm i klientów indywidualnych</li>
+                    <li>leasing i finansowanie inwestycji</li>
+                    <li>kredyty hipoteczne i konsumenckie</li>
                   </ul>
                 </div>
               </IconTile>
@@ -66,18 +64,23 @@ export default function Home() {
                 }}
               >
                 <div>
-                  <h2>Usługi komplementarne</h2>
-                  <p>
-                    Współpraca z jednostkami naukowo-badawczymi, procedury
-                    patentowania, tłumaczenia, pozyskiwanie partnerów
-                    biznesowych do realizacji projektów, etc.
+                  <h2>Dotacje unijne</h2>
+                  <p className="mb-3">
+                    Wspieramy przedsiębiorców w skutecznym pozyskiwaniu dotacji
+                    unijnych oraz innych form bezzwrotnego finansowania.
                   </p>
+
+                  <ul>
+                    <li>przygotowanie dokumentacji i wniosków</li>
+                    <li>projekty inwestycyjne i B+R</li>
+                    <li>zarządzanie i rozliczanie dotacji</li>
+                  </ul>
                 </div>
               </IconTile>
             </div>
 
             <div className="w-fit ml-auto mr-0 my-5">
-              <ArrowLink href={"/uslugi"}>Dowiedz sie wiecej</ArrowLink>
+              <ArrowLink href={"/uslugi"}>Dowiedz się więcej</ArrowLink>
             </div>
           </section>
 
@@ -91,16 +94,23 @@ export default function Home() {
             >
               <h2>O firmie</h2>
               <p className="mb-2">
-                Dysponujemy wieloletnim doświadczeniem w pozyskiwaniu
-                finansowania ze środków unijnych, popartym licznymi sukcesami,
-                które potwierdzają znaczące wolumeny pozyskanych środków oraz
-                wysoka skuteczność procentowa.
+                Posiadamy wieloletnie doświadczenie w doradztwie finansowym oraz
+                pozyskiwaniu finansowania dla firm i klientów indywidualnych.
+                Wspieramy w wyborze najlepszych rozwiązań kredytowych,
+                inwestycyjnych oraz dotacyjnych, dbając o skuteczność i
+                bezpieczeństwo całego procesu.
               </p>
+
+              <p className="mb-2">
+                Pomagamy zarówno przedsiębiorcom, jak i osobom prywatnym — od
+                analizy potrzeb, przez przygotowanie dokumentacji, aż po
+                uzyskanie finansowania.
+              </p>
+
               <p>
-                Specjalizujemy się w projektach współfinansowanych ze środków
-                unijnych, dedykowanych do szerokiego spektrum odbiorców: zarówno
-                przedsiębiorców indywidualnych, jak i konsorcjów, zawiązanych
-                przy udziale jednostek naukowych oraz instytutów badawczych.
+                Realizujemy zarówno projekty oparte na finansowaniu zwrotnym
+                (kredyty, leasing), jak i bezzwrotnym, w tym dotacjach unijnych
+                — szczególnie przy inwestycjach rozwojowych i innowacyjnych.
               </p>
             </ImageAndText>
           </section>

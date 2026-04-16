@@ -20,6 +20,7 @@ body {
     var(--background-1) 100%
   );
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  color: var(--color-black);
 
   @media (--md) {
     background: linear-gradient(
@@ -58,4 +59,12 @@ body {
 
 button {
   cursor: pointer;
+}
+
+ul {
+  padding-left: 16px;
+}
+
+ul li {
+  list-style-type: circle;
 }

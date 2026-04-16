@@ -25,10 +25,11 @@
     "CTA": "Umów się na bezpłatną konsultację"
   },
   "Services": {
-    "Title": "Doradztwo finansowe i dotacje dla firm – Trójmiasto i okolice"
+    "Title": "Doradztwo finansowe i dotacje dla firm",
+    "Subtitle": "Trójmiasto i okolice"
   },
   "About": {
-    "Title": "O firmie GA Finanse",
+    "Title": "O firmie",
     "Section1": {
       "Headline": "Doradztwo finansowe i dotacje unijne",
       "Text1": "GA Finanse specjalizuje się w kompleksowym doradztwie finansowym i gospodarczym. Pomagamy przedsiębiorcom oraz klientom indywidualnym w pozyskiwaniu finansowania, w tym kredytów, leasingu oraz dotacji unijnych.",

@@ -6,7 +6,7 @@ export default function About(): JSX.Element {
   const t = useTranslations("About");
 
   return (
-    <div className="container">
+    <div className="container [&_h3]:text-base">
       <h1 className="mb-6 text-center">{t("Title")}</h1>
 
       <div className="mb-10">

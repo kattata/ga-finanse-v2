@@ -1,6 +1,5 @@
 import { Hero } from "@/components/content/hero";
 import { IconTile } from "@/components/base/icon-tile";
-import Link from "next/link";
 import { ArrowLink } from "@/components/base/arrow-link";
 import { ImageAndText } from "@/components/base/image-and-text";
 import { CustomerSlider } from "@/components/content/customer-slider";
@@ -95,16 +94,23 @@ export default function Home() {
             >
               <h2>O firmie</h2>
               <p className="mb-2">
-                Dysponujemy wieloletnim doświadczeniem w pozyskiwaniu
-                finansowania ze środków unijnych, popartym licznymi sukcesami,
-                które potwierdzają znaczące wolumeny pozyskanych środków oraz
-                wysoka skuteczność procentowa.
+                Posiadamy wieloletnie doświadczenie w doradztwie finansowym oraz
+                pozyskiwaniu finansowania dla firm i klientów indywidualnych.
+                Wspieramy w wyborze najlepszych rozwiązań kredytowych,
+                inwestycyjnych oraz dotacyjnych, dbając o skuteczność i
+                bezpieczeństwo całego procesu.
               </p>
+
+              <p className="mb-2">
+                Pomagamy zarówno przedsiębiorcom, jak i osobom prywatnym — od
+                analizy potrzeb, przez przygotowanie dokumentacji, aż po
+                uzyskanie finansowania.
+              </p>
+
               <p>
-                Specjalizujemy się w projektach współfinansowanych ze środków
-                unijnych, dedykowanych do szerokiego spektrum odbiorców: zarówno
-                przedsiębiorców indywidualnych, jak i konsorcjów, zawiązanych
-                przy udziale jednostek naukowych oraz instytutów badawczych.
+                Realizujemy zarówno projekty oparte na finansowaniu zwrotnym
+                (kredyty, leasing), jak i bezzwrotnym, w tym dotacjach unijnych
+                — szczególnie przy inwestycjach rozwojowych i innowacyjnych.
               </p>
             </ImageAndText>
           </section>

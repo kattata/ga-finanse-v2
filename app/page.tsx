@@ -3,6 +3,7 @@ import { IconTile } from "@/components/base/icon-tile";
 import Link from "next/link";
 import { ArrowLink } from "@/components/base/arrow-link";
 import { ImageAndText } from "@/components/base/image-and-text";
+import { CustomerSlider } from "@/components/content/customer-slider";
 
 export default function Home() {
   return (
@@ -104,8 +105,9 @@ export default function Home() {
             </ImageAndText>
           </section>
 
-          <section>
-            <h2>Zaufali nam</h2>
+          <section className="text-center mt-15">
+            <h2 className="mb-2">Zaufali nam</h2>
+            <CustomerSlider />
           </section>
         </div>
       </main>

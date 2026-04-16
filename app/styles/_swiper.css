@@ -1,0 +1,12 @@
+:root {
+  --swiper-scrollbar-bottom: 0;
+  --swiper-scrollbar-sides-offset: 0%;
+}
+
+.swiper-scrollbar {
+  cursor: pointer !important;
+}
+
+.swiper-slide {
+  width: auto !important;
+}

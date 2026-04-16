@@ -4,6 +4,7 @@
 @import "./styles/_typography.css";
 @import "./styles/_breakpoints.css";
 @import "./styles/_media-queries.css";
+@import "./styles/_swiper.css";
 
 :root {
   --background-1: #f7f7f7;

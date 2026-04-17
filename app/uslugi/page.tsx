@@ -24,7 +24,7 @@ export default function Services(): JSX.Element {
       </section>
 
       <section className="tile mb-6">
-        <div className="text-center mb-4 md:max-w-2/3 mx-auto">
+        <div className="text-center mb-8 md:max-w-2/3 mx-auto">
           <h2>Doradztwo biznesowe</h2>
         </div>
 
@@ -63,7 +63,7 @@ export default function Services(): JSX.Element {
       </section>
 
       <section className="tile mb-6">
-        <div className="text-center mb-4 md:max-w-2/3 mx-auto">
+        <div className="text-center mb-8 md:max-w-2/3 mx-auto">
           <h2>Dotacje unijne i wsparcie bezzwrotne</h2>
           <p className="text-gray-700">
             Pomagamy w pozyskiwaniu i rozliczaniu dotacji unijnych oraz innych
@@ -107,7 +107,7 @@ export default function Services(): JSX.Element {
       </section>
 
       <section className="tile mb-6">
-        <div className="text-center mb-4 md:max-w-2/3 mx-auto">
+        <div className="text-center mb-8 md:max-w-2/3 mx-auto">
           <h2>Rozliczanie dotacji i projektów</h2>
           <p className="text-gray-700">
             Zapewniamy pełne wsparcie w rozliczaniu projektów finansowanych ze

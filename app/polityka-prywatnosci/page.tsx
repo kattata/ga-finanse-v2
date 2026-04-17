@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { JSX } from "react";
 
 export default function PrivacyPolicy(): JSX.Element {
@@ -113,6 +114,13 @@ export default function PrivacyPolicy(): JSX.Element {
         <br />
         <strong>ga.finanse@wp.pl</strong>
       </p>
+
+      <Script
+        id="CookieDeclaration"
+        src="https://consent.cookiebot.com/df632319-06fe-467a-bdc5-998416fe615e/cd.js"
+        type="text/javascript"
+        async
+      />
     </section>
   );
 }

@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="pl" className={`${robotoSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Header />
-        <div className="pt-6 pb-10">
+        <div className="pt-6 pb-20">
           <NextIntlClientProvider>{children}</NextIntlClientProvider>
         </div>
         <Footer />

@@ -19,7 +19,7 @@ export function ImageAndText({
   return (
     <section className="relative">
       <div
-        className={`h-[300px] md:h-[600px] w-screen -ml-4 md:w-4/5 ${imagePosition === "right" ? "md:ml-auto" : ""}`}
+        className={`h-[300px] md:h-[600px] w-screen -ml-4 md:w-4/5 ${imagePosition === "right" ? "md:ml-auto" : "md:ml-0"}`}
       >
         <Image
           src={image.url}

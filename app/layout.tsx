@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/global/header/header";
 import { NextIntlClientProvider } from "next-intl";
 import { Footer } from "@/components/global/footer";
+import Script from "next/script";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -29,6 +30,15 @@ export default function RootLayout({
           <NextIntlClientProvider>{children}</NextIntlClientProvider>
         </div>
         <Footer />
+
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="df632319-06fe-467a-bdc5-998416fe615e"
+          data-blockingmode="auto"
+          type="text/javascript"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );

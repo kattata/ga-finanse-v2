@@ -11,10 +11,10 @@ export function ArrowLink(props: ArrowLinkProps) {
       <div className="font-medium">{props.children}</div>
 
       <Image
-        src={"/icons/right-arrow.svg"}
+        src={"/icons/angle-right.svg"}
         alt="Strzalka w prawo"
-        width={10}
-        height={10}
+        width={18}
+        height={18}
       />
     </Link>
   );

@@ -80,7 +80,9 @@ export default function Home() {
             </div>
 
             <div className="w-fit ml-auto mr-0 my-5">
-              <ArrowLink href={"/uslugi"}>Dowiedz się więcej</ArrowLink>
+              <ArrowLink href={"/uslugi"}>
+                Dowiedz się więcej o usługach
+              </ArrowLink>
             </div>
           </section>
 
@@ -92,7 +94,7 @@ export default function Home() {
               }}
               imagePosition="right"
             >
-              <h2>O firmie</h2>
+              <h2 className="mb-2">O firmie</h2>
               <p className="mb-2">
                 Posiadamy wieloletnie doświadczenie w doradztwie finansowym oraz
                 pozyskiwaniu finansowania dla firm i klientów indywidualnych.
@@ -112,6 +114,12 @@ export default function Home() {
                 (kredyty, leasing), jak i bezzwrotnym, w tym dotacjach unijnych
                 — szczególnie przy inwestycjach rozwojowych i innowacyjnych.
               </p>
+
+              <div className="mt-4">
+                <ArrowLink href={"/o-firmie"}>
+                  Dowiedz się więcej o nas
+                </ArrowLink>
+              </div>
             </ImageAndText>
           </section>
 

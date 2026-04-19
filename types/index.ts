@@ -3,4 +3,5 @@ export interface Customer {
   image: {
     url: string;
   };
+  url?: string;
 }

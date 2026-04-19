@@ -22,6 +22,9 @@ export default function Services(): JSX.Element {
       <section className="tile mb-6">
         <div className="text-center mb-8 md:max-w-2/3 mx-auto">
           <h2>Doradztwo finansowe</h2>
+          <p className="text-gray-700">
+            Kompleksowe wsparcie finansowe dla firm i klientów indywidualnych
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

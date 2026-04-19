@@ -13,16 +13,6 @@ export function DesktopHeader() {
       </Link>
 
       <DesktopHeaderLinks navItems={navigation} />
-
-      {/* <nav className="flex gap-12 font-medium">
-        {navigation.map((item) => {
-          return (
-            <Link key={item.url} href={item.url}>
-              {item.label}
-            </Link>
-          );
-        })}
-      </nav> */}
     </header>
   );
 }

@@ -3,6 +3,8 @@ import { IconTile } from "@/components/base/icon-tile";
 import { ArrowLink } from "@/components/base/arrow-link";
 import { ImageAndText } from "@/components/base/image-and-text";
 import { CustomerSlider } from "@/components/content/customer-slider";
+import USPList from "@/components/content/usps";
+import { frontPageUsps } from "@/constants/usps";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
 
         <div className="container">
           <section>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-9 [&_h2]:text-h3 [&_h2]:leading-h3 [&_strong]:font-semibold">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 [&_h2]:text-h3 [&_h2]:leading-h3 [&_strong]:font-semibold">
               <IconTile
                 icon={{
                   url: "/icons/interview.svg",
@@ -84,6 +86,10 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="my-20 md:my-30">
+            <USPList usps={frontPageUsps} />
+          </section>
+
           <section className="mt-9">
             <ImageAndText
               image={{
@@ -115,8 +121,8 @@ export default function Home() {
             </ImageAndText>
           </section>
 
-          <section className="text-center mt-15">
-            <h2 className="mb-2">Zaufali nam</h2>
+          <section className="text-center mt-20">
+            <h2 className="mb-5">Zaufali nam</h2>
             <CustomerSlider />
           </section>
         </div>

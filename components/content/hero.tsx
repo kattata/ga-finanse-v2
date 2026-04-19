@@ -4,7 +4,7 @@ import { Button } from "../base/button";
 import Link from "next/link";
 
 export function Hero() {
-  const t = useTranslations("Hero");
+  const t = useTranslations("FrontPage.Hero");
 
   return (
     <div className="container">

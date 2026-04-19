@@ -2,20 +2,33 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/global/header/header";
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider, useTranslations } from "next-intl";
 import { Footer } from "@/components/global/footer";
 import Script from "next/script";
+import { getTranslations } from "next-intl/server";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "GA Finanse | Doradztwo finansowe i dotacje dla firm",
-  description:
-    "Pomagamy firmom i klientom indywidualnym w pozyskiwaniu dotacji, kredytów i finansowania inwestycji. Doradztwo finansowe GA Finanse – Gdynia.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("FrontPage.Metadata");
+
+  return {
+    title: t("Title"),
+    description: t("Description"),
+    openGraph: {
+      title: t("Title"),
+      description: t("Description"),
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function RootLayout({
   children,

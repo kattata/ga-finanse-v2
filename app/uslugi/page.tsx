@@ -16,16 +16,12 @@ export default function Services(): JSX.Element {
             {t("Subtitle")}
           </div>
         </h1>
-        <p className="md:max-w-2/3 mx-auto">
-          Wspieramy przedsiębiorców w pozyskiwaniu finansowania, dotacji
-          unijnych oraz w skutecznym rozwoju biznesu. Zapewniamy kompleksową
-          obsługę – od analizy po rozliczenie projektu.
-        </p>
+        <p className="md:max-w-2/3 mx-auto">{t("Description")}</p>
       </section>
 
       <section className="tile mb-6">
         <div className="text-center mb-8 md:max-w-2/3 mx-auto">
-          <h2>Doradztwo biznesowe</h2>
+          <h2>Doradztwo finansowe</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Logo } from "../logo";
 import { useNavigation } from "@/hooks/use-navigation";
+import { DesktopHeaderLinks } from "./desktop-header-links";
 
 export function DesktopHeader() {
   const navigation = useNavigation();
@@ -12,7 +12,9 @@ export function DesktopHeader() {
         <Logo />
       </Link>
 
-      <nav className="flex gap-12 font-medium">
+      <DesktopHeaderLinks navItems={navigation} />
+
+      {/* <nav className="flex gap-12 font-medium">
         {navigation.map((item) => {
           return (
             <Link key={item.url} href={item.url}>
@@ -20,7 +22,7 @@ export function DesktopHeader() {
             </Link>
           );
         })}
-      </nav>
+      </nav> */}
     </header>
   );
 }

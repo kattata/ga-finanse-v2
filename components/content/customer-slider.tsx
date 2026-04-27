@@ -22,7 +22,7 @@ export function CustomerSlider() {
     >
       {customers.items.map((customer) => {
         return (
-          <SwiperSlide key={customer.name} className="my-3 mb-6 w-fit">
+          <SwiperSlide key={customer.name} className="my-3 mb-10 w-fit">
             <div className="tile w-[200px] h-[200px] flex justify-center items-center">
               <Image
                 className="object-contain"

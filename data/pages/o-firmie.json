@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "title": "GA Finanse | O firmie",
+    "description": "Dowiedz się więcej o GA Finanse. Pomagamy rozwijać biznesy i realizować cele finansowe poprzez skuteczne doradztwo i wsparcie w pozyskiwaniu finansowania."
+  },
+  "title": "O firmie",
+  "sections": [
+    {
+      "title": "Doradztwo finansowe i dotacje unijne",
+      "texts": [
+        {
+          "headline": null,
+          "text": "GA Finanse specjalizuje się w kompleksowym doradztwie finansowym i gospodarczym. Pomagamy przedsiębiorcom oraz klientom indywidualnym w pozyskiwaniu finansowania, w tym kredytów, leasingu oraz dotacji unijnych."
+        },
+        {
+          "headline": null,
+          "text": "Posiadamy wieloletnie doświadczenie w skutecznym zdobywaniu środków z funduszy europejskich. Nasze sukcesy potwierdzają wysoka skuteczność oraz duża wartość pozyskanych dofinansowań."
+        }
+      ]
+    },
+    {
+      "title": "Zakres usług",
+      "texts": [
+        {
+          "headline": "Finansowanie dla firm i klientów indywidualnych",
+          "text": "Pomagamy w uzyskaniu finansowania w formie kredytów, leasingu, faktoringu oraz innych rozwiązań bankowych i pozabankowych."
+        },
+        {
+          "headline": "Dotacje unijne i projekty",
+          "text": "Specjalizujemy się w projektach współfinansowanych ze środków unijnych. Obsługujemy zarówno małe firmy, jak i duże projekty realizowane we współpracy z jednostkami naukowymi i instytutami badawczymi."
+        },
+        {
+          "headline": "Kompleksowe wsparcie",
+          "text": "Współpracujemy z klientami w Trójmieście oraz na terenie całej Polski. Zapewniamy pełne wsparcie – od przygotowania wniosku, przez pozyskanie finansowania, aż po rozliczenie projektu."
+        }
+      ]
+    }
+  ]
+}

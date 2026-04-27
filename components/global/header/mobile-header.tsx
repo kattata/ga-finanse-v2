@@ -1,12 +1,13 @@
 "use client";
+
 import { Menu } from "@deemlol/next-icons";
 import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "../logo";
-import { useNavigation } from "@/hooks/use-navigation";
+import globalData from "@/data/global.json";
 
 export function MobileHeader() {
-  const navigation = useNavigation();
+  const { navigation } = globalData;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleLinkClick() {
@@ -40,7 +41,7 @@ export function MobileHeader() {
         </Link>
 
         <nav className="flex flex-col gap-4 font-medium mt-10 uppercase">
-          {navigation.map((item) => {
+          {navigation.items.map((item) => {
             return (
               <Link key={item.url} href={item.url} onClick={handleLinkClick}>
                 {item.label}

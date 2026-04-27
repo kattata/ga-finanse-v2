@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/global/header/header";
-import { NextIntlClientProvider, useTranslations } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { Footer } from "@/components/global/footer";
 import Script from "next/script";
-import { getTranslations } from "next-intl/server";
+import globalData from "@/data/global.json";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -13,14 +13,14 @@ const robotoSans = Roboto({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("FrontPage.Metadata");
+  const { metadata } = globalData;
 
   return {
-    title: t("Title"),
-    description: t("Description"),
+    title: metadata.title,
+    description: metadata.description,
     openGraph: {
-      title: t("Title"),
-      description: t("Description"),
+      title: metadata.title,
+      description: metadata.description,
       type: "website",
     },
     robots: {

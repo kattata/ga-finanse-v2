@@ -10,3 +10,8 @@ export interface USP {
   headline: string;
   text: string;
 }
+
+export interface NavItem {
+  label: string;
+  url: string;
+}

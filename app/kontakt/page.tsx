@@ -2,10 +2,8 @@ import { ContactInfo } from "@/components/base/contact-info";
 import { MapEmbed } from "@/components/base/map-embed";
 import { Metadata } from "next";
 import Image from "next/image";
-
-import { JSX } from "react";
-
 import contactData from "@/data/pages/kontakt.json";
+import { JSX } from "react";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { metadata } = contactData;

@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "GA Finanse | Doradztwo finansowe i dotacje dla firm",
+    "description": "Pomagamy firmom i klientom indywidualnym w pozyskiwaniu dotacji, kredytów i finansowania inwestycji. Doradztwo finansowe GA Finanse – Gdynia."
+  },
   "contactInfo": {
     "phone": "+48 669 998 340",
     "email": "ga.finanse@wp.pl",
@@ -9,5 +13,44 @@
     },
     "nip": "NIP 5862314868",
     "regon": "REGON 366577954"
+  },
+  "navigation": {
+    "items": [
+      {
+        "label": "Strona główna",
+        "url": "/"
+      },
+      {
+        "label": "Usługi",
+        "url": "/uslugi"
+      },
+      {
+        "label": "O firmie",
+        "url": "/o-firmie"
+      },
+      {
+        "label": "Kontakt",
+        "url": "/kontakt"
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "headline": "GA Finanse",
+        "text": "GA Finanse Spółka z ograniczoną odpowiedzialnością z siedzibą w Gdyni (81-391), ul. Świętojańska 59 lok. 4, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego pod numerem KRS 0000663924, prowadzonego przez Sąd Rejonowy Gdańsk-Północ w Gdańsku, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego, kapitał zakładowy 6000 zł w całości opłacony.",
+        "links": [
+          {
+            "url": "/polityka-prywatnosci",
+            "text": "Polityka prywatności"
+          }
+        ]
+      },
+      {
+        "headline": "Kontakt",
+        "text": null,
+        "links": []
+      }
+    ]
   }
 }

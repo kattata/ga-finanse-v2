@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Logo } from "../logo";
-import { useNavigation } from "@/hooks/use-navigation";
+import globalData from "@/data/global.json";
 import { DesktopHeaderLinks } from "./desktop-header-links";
 
 export function DesktopHeader() {
-  const navigation = useNavigation();
+  const { navigation } = globalData;
 
   return (
     <header className="flex items-center justify-between gap-3 uppercase w-full container mx-auto py-5">
@@ -12,7 +12,7 @@ export function DesktopHeader() {
         <Logo />
       </Link>
 
-      <DesktopHeaderLinks navItems={navigation} />
+      <DesktopHeaderLinks navItems={navigation.items} />
     </header>
   );
 }

@@ -7,8 +7,10 @@ export interface Customer {
 }
 
 export interface USP {
+  overheadline?: string;
   headline: string;
   text: string;
+  variant?: "small" | "default";
 }
 
 export interface NavItem {

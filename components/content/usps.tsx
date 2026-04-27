@@ -14,7 +14,14 @@ export default function USPList({ usps }: Props) {
               className="!list-none text-center items-center flex flex-col gap-3"
               key={usp.headline}
             >
-              <div className="text-[40px] md:text-[54px] font-bold text-primary-navy leading-12 md:leading-15">
+              <div
+                className={`font-bold text-primary-navy leading-12 md:leading-15
+                    ${
+                      usp.variant === "small"
+                        ? " text-[30px] md:text-[40px]"
+                        : " text-[40px] md:text-[54px] "
+                    }`}
+              >
                 {usp.headline}
               </div>
               <div className="font-semibold max-w-3/4 uppercase">

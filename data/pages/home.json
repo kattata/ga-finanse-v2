@@ -62,21 +62,25 @@
     {
       "overheadline": "ponad",
       "headline": "25",
-      "text": "lat doświadczenia"
+      "text": "lat doświadczenia",
+      "variant": "default"
     },
     {
       "overheadline": "ponad",
       "headline": "60",
-      "text": "współpracujących instytucji finansowych"
+      "text": "współpracujących instytucji finansowych",
+      "variant": "default"
     },
     {
       "overheadline": "ponad",
       "headline": "750",
-      "text": "zadowolonych klientów"
+      "text": "zadowolonych klientów",
+      "variant": "default"
     },
     {
       "headline": "Pomoc na każdym etapie",
-      "text": "od analizy do wypłaty środków oraz w trakcie trwania umowy"
+      "text": "od analizy do wypłaty środków oraz w trakcie trwania umowy",
+      "variant": "small"
     }
   ],
   "about": {

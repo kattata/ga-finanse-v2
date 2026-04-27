@@ -5,5 +5,98 @@
   },
   "title": "Doradztwo finansowe i dotacje dla firm",
   "subtitle": "Trójmiasto i okolice",
-  "description": "Wspieramy przedsiębiorców w pozyskiwaniu finansowania, dotacji unijnych oraz w skutecznym rozwoju biznesu. Zapewniamy kompleksową obsługę – od analizy po rozliczenie projektu."
+  "description": "Wspieramy przedsiębiorców w pozyskiwaniu finansowania, dotacji unijnych oraz w skutecznym rozwoju biznesu. Zapewniamy kompleksową obsługę – od analizy po rozliczenie projektu.",
+  "services": [
+    {
+      "title": "Doradztwo finansowe",
+      "subtitle": "Kompleksowe wsparcie finansowe dla firm i klientów indywidualnych",
+      "groups": [
+        {
+          "headline": "Pozyskiwanie finansowania",
+          "items": [
+            "analiza potrzeb i dobór źródeł finansowania",
+            "opracowanie analiz finansowych",
+            "przygotowanie dokumentacji (biznesplany, studia wykonalności)"
+          ]
+        },
+        {
+          "headline": "Finansowanie dla firm i klientów indywidualnych",
+          "items": [
+            "kredyty inwestycyjne i obrotowe",
+            "leasing i faktoring",
+            "kredyty hipoteczne",
+            "finansowanie zakupów i dostaw",
+            "kredyty dla klientów indywidualnych"
+          ]
+        },
+        {
+          "headline": "Usługi dodatkowe",
+          "items": [
+            "współpraca z jednostkami naukowymi i laboratoriami",
+            "doradztwo w zakresie własności intelektualnej",
+            "pozyskiwanie partnerów do projektów"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dotacje unijne i wsparcie bezzwrotne",
+      "subtitle": "Pomagamy w pozyskiwaniu i rozliczaniu dotacji unijnych oraz innych form wsparcia publicznego.",
+      "groups": [
+        {
+          "headline": "Zakres usług",
+          "items": [
+            "doradztwo projektowe",
+            "przygotowanie wniosków i dokumentacji",
+            "zarządzanie projektem",
+            "rozliczanie dotacji"
+          ]
+        },
+        {
+          "headline": "Specjalizacje",
+          "items": [
+            "projekty inwestycyjne",
+            "badania i rozwój (B+R)",
+            "eksport i targi",
+            "ochrona środowiska i OZE",
+            "cyfryzacja i IT",
+            "projekty międzynarodowe"
+          ]
+        },
+        {
+          "headline": "Dla kogo",
+          "items": [
+            "małe i średnie przedsiębiorstwa (MŚP)",
+            "duże firmy",
+            "konsorcja",
+            "instytuty badawcze"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rozliczanie dotacji i projektów",
+      "subtitle": "Zapewniamy pełne wsparcie w rozliczaniu projektów finansowanych ze środków publicznych – od podpisania umowy po końcowe rozliczenie.",
+      "groups": [
+        {
+          "headline": "Oferujemy",
+          "items": [
+            "przygotowanie dokumentów do umowy",
+            "wnioski o płatności (częściowe i końcowe)",
+            "kontrola poprawności wydatków",
+            "doradztwo księgowe w projektach",
+            "procedury wyboru dostawców (zasada konkurencyjności)"
+          ]
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "headline": "Sprawdź swoje możliwości finansowania",
+    "text": "Chcesz wiedzieć, z jakiego wsparcia możesz skorzystać? Pomożemy dobrać najlepsze rozwiązanie dla Ciebie lub Twojej firmy.",
+    "cta": {
+      "text": "Skontaktuj się z nami",
+      "url": "/kontakt"
+    }
+  }
 }

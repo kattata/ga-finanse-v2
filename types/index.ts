@@ -5,3 +5,8 @@ export interface Customer {
   };
   url?: string;
 }
+
+export interface USP {
+  headline: string;
+  text: string;
+}

@@ -2,7 +2,7 @@ import { Button } from "@/components/base/button";
 import { ImageAndText } from "@/components/base/image-and-text";
 import Link from "next/link";
 import { JSX } from "react";
-import servicesData from "@/data/services.json";
+import servicesData from "@/data/pages/uslugi.json";
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {

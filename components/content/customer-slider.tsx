@@ -3,12 +3,13 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, A11y } from "swiper/modules";
-import { customers } from "@/constants/customers";
+import homeData from "@/data/pages/home.json";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
 
 export function CustomerSlider() {
+  const { customers } = homeData;
   return (
     <Swiper
       spaceBetween={24}
@@ -19,7 +20,7 @@ export function CustomerSlider() {
       modules={[Scrollbar, A11y]}
       scrollbar={{ draggable: true }}
     >
-      {customers.map((customer) => {
+      {customers.items.map((customer) => {
         return (
           <SwiperSlide key={customer.name} className="my-3 mb-6 w-fit">
             <div className="tile w-[200px] h-[200px] flex justify-center items-center">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import globalData from "@/data/global.json";
 
 type Props = {
   className?: string;
@@ -6,6 +7,8 @@ type Props = {
 };
 
 export function ContactInfo({ className, showDividers }: Props) {
+  const { phone, address, email, nip, regon } = globalData.contactInfo;
+
   return (
     <div className={`flex flex-col ${className} [&_a]:underline`}>
       <div
@@ -14,10 +17,10 @@ export function ContactInfo({ className, showDividers }: Props) {
         }
       >
         <div>
-          <Link href={"tel:+48 669 998 340"}>+48 669 998 340</Link>
+          <Link href={"tel:+48 669 998 340"}>{phone}</Link>
         </div>
         <div>
-          <Link href={"mailto:ga.finanse@wp.pl"}>ga.finanse@wp.pl</Link>
+          <Link href={"mailto:ga.finanse@wp.pl"}>{email}</Link>
         </div>
       </div>
 
@@ -26,13 +29,15 @@ export function ContactInfo({ className, showDividers }: Props) {
           showDividers ? "border-b border-b-gray-300 pb-4 mb-4" : "pb-4"
         }
       >
-        <div>ul. Świętojańska 59 lok. nr 4</div>
-        <div>81-391 Gdynia</div>
+        <div>{address.street}</div>
+        <div>
+          {address.postalCode} {address.city}
+        </div>
       </div>
 
       <div>
-        <div>NIP 5862314868</div>
-        <div>REGON 366577954</div>
+        <div>{nip}</div>
+        <div>{regon}</div>
       </div>
     </div>
   );

@@ -4,9 +4,30 @@ import { ArrowLink } from "@/components/base/arrow-link";
 import { ImageAndText } from "@/components/base/image-and-text";
 import { CustomerSlider } from "@/components/content/customer-slider";
 import USPList from "@/components/content/usps";
-import { frontPageUsps } from "@/constants/usps";
+import homeData from "@/data/pages/home.json";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const { metadata } = homeData;
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function Home() {
+  const { tiles, usps, about, customers } = homeData;
+
   return (
     <div>
       <main>
@@ -15,81 +36,37 @@ export default function Home() {
         <div className="container">
           <section>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 [&_h2]:text-h3 [&_h2]:leading-h3 [&_strong]:font-semibold">
-              <IconTile
-                icon={{
-                  url: "/icons/interview.svg",
-                  alt: "Rozmowa",
-                }}
-              >
-                <div>
-                  <h2>Doradztwo biznesowe i finansowe</h2>
-                  <p className="mb-3">
-                    Pomagamy dobrać najlepsze rozwiązania finansowe — zarówno
-                    dla firm, jak i osób prywatnych.
-                  </p>
+              {tiles.items.map((tile) => {
+                return (
+                  <IconTile
+                    key={tile.headline}
+                    icon={{
+                      url: tile.icon.url,
+                      alt: tile.icon.alt,
+                    }}
+                  >
+                    <div>
+                      <h2>{tile.headline}</h2>
+                      <p className="mb-3">{tile.text}</p>
 
-                  <ul>
-                    <li>analizy finansowe i doradztwo</li>
-                    <li>przygotowanie dokumentacji i wniosków</li>
-                    <li>wsparcie w podejmowaniu decyzji finansowych</li>
-                  </ul>
-                </div>
-              </IconTile>
-
-              <IconTile
-                icon={{
-                  url: "/icons/accounting.svg",
-                  alt: "Pieniadze",
-                }}
-              >
-                <div>
-                  <h2>Finansowanie i kredyty</h2>
-
-                  <p className="mb-3">
-                    Pomagamy w uzyskaniu finansowania dopasowanego do Twojej
-                    sytuacji — niezależnie od tego, czy prowadzisz firmę, czy
-                    działasz prywatnie.
-                  </p>
-
-                  <ul>
-                    <li>kredyty dla firm i klientów indywidualnych</li>
-                    <li>leasing i finansowanie inwestycji</li>
-                    <li>kredyty hipoteczne i konsumenckie</li>
-                  </ul>
-                </div>
-              </IconTile>
-
-              <IconTile
-                icon={{
-                  url: "/icons/leasing1.svg",
-                  alt: "Wymiana",
-                }}
-              >
-                <div>
-                  <h2>Dotacje unijne</h2>
-                  <p className="mb-3">
-                    Wspieramy przedsiębiorców w skutecznym pozyskiwaniu dotacji
-                    unijnych oraz innych form bezzwrotnego finansowania.
-                  </p>
-
-                  <ul>
-                    <li>przygotowanie dokumentacji i wniosków</li>
-                    <li>projekty inwestycyjne i B+R</li>
-                    <li>zarządzanie i rozliczanie dotacji</li>
-                  </ul>
-                </div>
-              </IconTile>
+                      <ul>
+                        {tile.items.map((item) => {
+                          return <li key={item}>{item}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  </IconTile>
+                );
+              })}
             </div>
 
             <div className="w-fit ml-auto mr-0 my-5">
-              <ArrowLink href={"/uslugi"}>
-                Dowiedz się więcej o usługach
-              </ArrowLink>
+              <ArrowLink href={tiles.cta.url}>{tiles.cta.text}</ArrowLink>
             </div>
           </section>
 
           <section className="my-20 md:my-30">
-            <USPList usps={frontPageUsps} />
+            <USPList usps={usps} />
           </section>
 
           <section className="mt-9">
@@ -100,37 +77,24 @@ export default function Home() {
               }}
               imagePosition="right"
             >
-              <h2 className="mb-2">O firmie</h2>
-              <p className="mb-2">
-                Posiadamy wieloletnie doświadczenie w doradztwie finansowym oraz
-                pozyskiwaniu finansowania dla firm i klientów indywidualnych.
-                Wspieramy w wyborze najlepszych rozwiązań kredytowych,
-                inwestycyjnych oraz dotacyjnych, dbając o skuteczność i
-                bezpieczeństwo całego procesu.
-              </p>
+              <h2 className="mb-2">{about.headline}</h2>
 
-              <p className="mb-2">
-                Pomagamy zarówno przedsiębiorcom, jak i osobom prywatnym — od
-                analizy potrzeb, przez przygotowanie dokumentacji, aż po
-                uzyskanie finansowania.
-              </p>
-
-              <p>
-                Realizujemy zarówno projekty oparte na finansowaniu zwrotnym
-                (kredyty, leasing), jak i bezzwrotnym, w tym dotacjach unijnych
-                — szczególnie przy inwestycjach rozwojowych i innowacyjnych.
-              </p>
+              {about.texts.map((text) => {
+                return (
+                  <p className="mb-2" key={text}>
+                    {text}
+                  </p>
+                );
+              })}
 
               <div className="mt-4">
-                <ArrowLink href={"/o-firmie"}>
-                  Dowiedz się więcej o nas
-                </ArrowLink>
+                <ArrowLink href={about.cta.url}>{about.cta.text}</ArrowLink>
               </div>
             </ImageAndText>
           </section>
 
           <section className="text-center mt-20">
-            <h2 className="mb-5">Zaufali nam</h2>
+            <h2 className="mb-5">{customers.headline}</h2>
             <CustomerSlider />
           </section>
         </div>

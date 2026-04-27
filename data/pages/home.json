@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "title": "GA Finanse | Doradztwo finansowe i dotacje dla firm",
+    "description": "Pomagamy firmom i klientom indywidualnym w pozyskiwaniu dotacji, kredytów i finansowania inwestycji. Doradztwo finansowe GA Finanse – Gdynia."
+  },
+  "hero": {
+    "headline": "Finansowanie dla firm i klientów indywidualnych",
+    "text": "Kredyty, dotacje i rozwiązania inwestycyjne dopasowane do Twoich celów",
+    "cta": {
+      "text": "Umów się na bezpłatną konsultację",
+      "url": "/kontakt"
+    }
+  },
+  "tiles": {
+    "items": [
+      {
+        "headline": "Doradztwo biznesowe i finansowe",
+        "text": "Pomagamy dobrać najlepsze rozwiązania finansowe - zarówno dla firm, jak i osób prywatnych.",
+        "icon": {
+          "url": "/icons/interview.svg",
+          "alt": "Rozmowa"
+        },
+        "items": [
+          "analizy finansowe i doradztwo",
+          "przygotowanie dokumentacji i wniosków",
+          "wsparcie w podejmowaniu decyzji finansowych"
+        ]
+      },
+      {
+        "headline": "Finansowanie i kredyty",
+        "text": "Pomagamy w uzyskaniu finansowania dopasowanego do Twojej sytuacji - niezależnie od tego, czy prowadzisz firmę, czy działasz prywatnie.",
+        "icon": {
+          "url": "/icons/accounting.svg",
+          "alt": "Pieniadze"
+        },
+        "items": [
+          "kredyty dla firm i klientów indywidualnych",
+          "leasing i finansowanie inwestycji",
+          "kredyty hipoteczne i konsumenckie"
+        ]
+      },
+      {
+        "headline": "Dotacje unijne",
+        "text": "Wspieramy przedsiębiorców w skutecznym pozyskiwaniu dotacji unijnych oraz innych form bezzwrotnego finansowania.",
+        "icon": {
+          "url": "/icons/leasing1.svg",
+          "alt": "Wymiana"
+        },
+        "items": [
+          "przygotowanie dokumentacji i wniosków",
+          "projekty inwestycyjne i B+R",
+          "zarządzanie i rozliczanie dotacji"
+        ]
+      }
+    ],
+    "cta": {
+      "url": "/uslugi",
+      "text": "Dowiedz się więcej o usługach"
+    }
+  },
+  "usps": [
+    {
+      "overheadline": "ponad",
+      "headline": "25",
+      "text": "lat doświadczenia"
+    },
+    {
+      "overheadline": "ponad",
+      "headline": "750",
+      "text": "zadowolonych klientów"
+    },
+    {
+      "overheadline": "ponad",
+      "headline": "60",
+      "text": "współpracujących instytucji finansowych"
+    },
+    {
+      "headline": "Pomoc na każdym etapie",
+      "text": "od analizy do wypłaty środków oraz w trakcie trwania umowy"
+    }
+  ],
+  "about": {
+    "headline": "O firmie",
+    "texts": [
+      "Posiadamy wieloletnie doświadczenie w doradztwie finansowym oraz pozyskiwaniu finansowania dla firm i klientów indywidualnych. Wspieramy w wyborze najlepszych rozwiązań kredytowych, inwestycyjnych oraz dotacyjnych, dbając o skuteczność i bezpieczeństwo całego procesu.",
+      "Pomagamy zarówno przedsiębiorcom, jak i osobom prywatnym — od analizy potrzeb, przez przygotowanie dokumentacji, aż po uzyskanie finansowania.",
+      "Realizujemy zarówno projekty oparte na finansowaniu zwrotnym (kredyty, leasing), jak i bezzwrotnym, w tym dotacjach unijnych - szczególnie przy inwestycjach rozwojowych i innowacyjnych."
+    ],
+    "cta": {
+      "url": "/o-firmie",
+      "text": "Dowiedz się więcej o nas"
+    }
+  },
+  "customers": {
+    "headline": "Zaufali nam",
+    "items": [
+      {
+        "name": "PolBlat",
+        "image": {
+          "url": "/images/customers/polblat.png"
+        }
+      },
+      {
+        "name": "GM Color",
+        "image": {
+          "url": "/images/customers/gm-color.png"
+        }
+      },
+      {
+        "name": "Best Life",
+        "image": {
+          "url": "/images/customers/best-life.png"
+        }
+      },
+      {
+        "name": "Ekomer",
+        "image": {
+          "url": "/images/customers/ekomer.jpg"
+        }
+      },
+      {
+        "name": "Ostrzyce Spa",
+        "image": {
+          "url": "/images/customers/ostrzyce-spa.png"
+        }
+      },
+      {
+        "name": "Restormann",
+        "image": {
+          "url": "/images/customers/restormann-logo.png"
+        }
+      },
+      {
+        "name": "Ecosystems",
+        "image": {
+          "url": "/images/customers/ecosystems_maly.png"
+        }
+      },
+      {
+        "name": "Cebiro",
+        "image": {
+          "url": "/images/customers/cebiro.png"
+        }
+      }
+    ]
+  }
+}

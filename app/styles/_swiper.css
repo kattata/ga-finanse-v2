@@ -3,6 +3,7 @@
   --swiper-scrollbar-sides-offset: 0%;
   --swiper-scrollbar-bg-color: var(--color-gray-300);
   --swiper-scrollbar-drag-bg-color: var(--color-gray-700);
+  --swiper-scrollbar-border-radius: 0;
 }
 
 .swiper-scrollbar {

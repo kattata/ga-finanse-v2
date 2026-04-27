@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="my-20 md:my-30">
+          <section className="my-20 md:my-20">
             <USPList usps={usps} />
           </section>
 

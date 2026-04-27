@@ -4,6 +4,7 @@ import Link from "next/link";
 import { JSX } from "react";
 import servicesData from "@/data/pages/uslugi.json";
 import { Metadata } from "next";
+import { CheckmarkIcon } from "@/components/icons/checkmark-icon";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = servicesData.metadata;
@@ -28,10 +29,10 @@ export default function Services(): JSX.Element {
 
   return (
     <div className="container [&_h3]:text-base">
-      <section className="text-center mb-10">
+      <section className="text-center mt-5 mb-10 border-b border-b-gray-300 pb-15">
         <h1>
           <div>{title}</div>
-          <div className="text-sm uppercase text-gray-700 mt-2">{subtitle}</div>
+          <div className="text-base text-gray-700 mt-2">{subtitle}</div>
         </h1>
         <p className="md:max-w-2/3 mx-auto">{description}</p>
       </section>
@@ -47,7 +48,7 @@ export default function Services(): JSX.Element {
         );
       })}
 
-      <section className="mt-15 pt-10 border-t border-t-gray-300">
+      <section className="mt-10 pt-15 border-t border-t-gray-300">
         <ImageAndText
           image={{ url: "/images/gdynia-cranes-min.jpg", alt: "Gdynia Port" }}
           imagePosition="left"
@@ -83,15 +84,20 @@ function ServiceTile({ title, subtitle, groups }: Service) {
         <p className="text-gray-700">{subtitle}</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {groups.map((group) => {
           return (
             <article key={group.headline}>
-              <h3>{group.headline}</h3>
+              <h3 className="mb-2">{group.headline}</h3>
 
-              <ul>
+              <ul className="!p-0 flex flex-col gap-1">
                 {group.items.map((item) => {
-                  return <li key={item}>{item}</li>;
+                  return (
+                    <li className="!list-none flex gap-3 p-0" key={item}>
+                      <CheckmarkIcon className="min-h-5 min-w-5 max-h-5 max-w-5 fill-primary-navy" />
+                      {item}
+                    </li>
+                  );
                 })}
               </ul>
             </article>

@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "title": "GA Finanse | Doradztwo finansowe i dotacje dla firm",
+    "title": "GA Finanse | Doradztwo finansowe i dotacje",
     "description": "Usługi doradztwa finansowego w Gdyni. GA Finanse pomaga w dotacjach, kredytach i finansowaniu inwestycji dla firm i klientów indywidualnych."
   },
-  "title": "Doradztwo finansowe i dotacje dla firm",
-  "subtitle": "Trójmiasto i okolice",
-  "description": "Wspieramy przedsiębiorców w pozyskiwaniu finansowania, dotacji unijnych oraz w skutecznym rozwoju biznesu. Zapewniamy kompleksową obsługę – od analizy po rozliczenie projektu.",
+  "title": "Doradztwo finansowe i dotacje",
+  "subtitle": "Wsparcie dla firm i klientów indywidualnych z Trójmiasta i całej Polski",
+  "description": "Pomagamy firmom oraz klientom indywidualnym w pozyskiwaniu finansowania, dotacji unijnych i realizacji projektów inwestycyjnych. Wspieramy na każdym etapie - od analizy potrzeb i przygotowania dokumentacji po uzyskanie oraz rozliczenie finansowania.",
   "services": [
     {
       "title": "Doradztwo finansowe",
@@ -40,52 +40,39 @@
       ]
     },
     {
-      "title": "Dotacje unijne i wsparcie bezzwrotne",
-      "subtitle": "Pomagamy w pozyskiwaniu i rozliczaniu dotacji unijnych oraz innych form wsparcia publicznego.",
+      "title": "Dotacje unijne i kompleksowa obsługa projektów",
+      "subtitle": "Pomagamy przedsiębiorcom w pozyskiwaniu, realizacji oraz rozliczaniu dotacji unijnych i innych form wsparcia publicznego.",
       "groups": [
         {
-          "headline": "Zakres usług",
+          "headline": "Pozyskiwanie dotacji",
           "items": [
             "doradztwo projektowe",
+            "analiza możliwości finansowania",
             "przygotowanie wniosków i dokumentacji",
             "zarządzanie projektem",
             "rozliczanie dotacji"
           ]
         },
         {
-          "headline": "Specjalizacje",
+          "headline": "Realizacja i rozliczanie projektów",
           "items": [
-            "projekty inwestycyjne",
-            "badania i rozwój (B+R)",
-            "eksport i targi",
-            "ochrona środowiska i OZE",
-            "cyfryzacja i IT",
-            "projekty międzynarodowe"
+            "zarządzanie projektem",
+            "przygotowanie dokumentów do umowy",
+            "wnioski o płatności (częściowe i końcowe)",
+            "rozliczanie dotacji",
+            "kontrola poprawności wydatków",
+            "procedury wyboru dostawców (zasada konkurencyjności)"
           ]
         },
         {
-          "headline": "Dla kogo",
+          "headline": "Specjalizacje",
           "items": [
-            "małe i średnie przedsiębiorstwa (MŚP)",
-            "duże firmy",
-            "konsorcja",
-            "instytuty badawcze"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Rozliczanie dotacji i projektów",
-      "subtitle": "Zapewniamy pełne wsparcie w rozliczaniu projektów finansowanych ze środków publicznych – od podpisania umowy po końcowe rozliczenie.",
-      "groups": [
-        {
-          "headline": "Oferujemy",
-          "items": [
-            "przygotowanie dokumentów do umowy",
-            "wnioski o płatności (częściowe i końcowe)",
-            "kontrola poprawności wydatków",
-            "doradztwo księgowe w projektach",
-            "procedury wyboru dostawców (zasada konkurencyjności)"
+            "badania i rozwój (B+R)",
+            "ochrona środowiska i OZE",
+            "cyfryzacja i IT",
+            "eksport i targi",
+            "projekty inwestyjne",
+            "projekty międzynarodowe"
           ]
         }
       ]

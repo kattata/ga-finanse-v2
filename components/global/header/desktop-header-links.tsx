@@ -1,8 +1,8 @@
 "use client";
 
+import { NavItem } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NavItem } from "@/hooks/use-navigation";
 
 interface Props {
   navItems: NavItem[];

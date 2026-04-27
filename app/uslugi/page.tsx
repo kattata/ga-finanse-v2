@@ -1,22 +1,39 @@
 import { Button } from "@/components/base/button";
 import { ImageAndText } from "@/components/base/image-and-text";
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { JSX } from "react";
+import servicesData from "@/data/services.json";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = servicesData.metadata;
+
+  return {
+    title: title,
+    description: description,
+    openGraph: {
+      title: title,
+      description: description,
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default function Services(): JSX.Element {
-  const t = useTranslations("Services");
-
   return (
     <div className="container [&_h3]:text-base">
       <section className="text-center mb-10">
         <h1>
-          <div>{t("Title")}</div>
+          <div>{servicesData.title}</div>
           <div className="text-sm uppercase text-gray-700 mt-2">
-            {t("Subtitle")}
+            {servicesData.subtitle}
           </div>
         </h1>
-        <p className="md:max-w-2/3 mx-auto">{t("Description")}</p>
+        <p className="md:max-w-2/3 mx-auto">{servicesData.description}</p>
       </section>
 
       <section className="tile mb-6">
